@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+  
+    function showStr (one, two, three){
+      console.log(one)
+      console.log(two)
+      console.log(three)
+    }
+    const pewson = 'Lydia';
+    const age = 21;
+
+    // 如果使用标记的字符串模板，则第一个参数的值始终是字符串值的数组，
+    // 其余参数是字符串模板中的表达式的值；
+    showStr`${pewson} is ${age} years old`;
+
+  </script>
+
+</body>
+</html>

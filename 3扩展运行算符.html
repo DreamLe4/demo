@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+  
+    // 扩展运算符（... args）返回一个带参数的数组。
+    // 这个数组是一个对象，因此typeof args返回object
+
+    function getAge(...args){
+      console.log(typeof args)
+    }
+
+    getAge(21);
+
+
+    /*
+      常见的错误：
+        undefined   定义了没赋值，（未初始化）
+        TypeError   （类型错误） 对象用来表示值的类型非预期类型时发生的错误。
+    */
+  
+  </script>
+
+</body>
+</html>

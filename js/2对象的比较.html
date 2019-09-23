@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    function checkAge(data) {
+      if (data === {
+          age: 18
+        }) {
+        console.log("You are an adult!");
+      } else if (data == {
+          age: 18
+        }) {
+        console.log("You are still an adult.");
+      } else {
+        // 对象在比较相等性的时候，原始类型通过他们的值进行比较，
+        // 而对象通过它们的引用进行比较。
+        console.log(data == {age: 18})        // false
+        console.log(data === {age: 18})       // false
+        console.log(`Hmm.. You don't have an age I guess`);
+      }
+    }
+
+    checkAge({
+      age: 18
+    });
+
+  </script>
+
+</body>
+
+</html>
